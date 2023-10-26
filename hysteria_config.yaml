@@ -4,12 +4,6 @@ tls:
   cert: /root/cert/hy.doubebly.eu.org.cer
   key: /root/cert/hy.doubebly.eu.org.key
 
-quic:
-  initStreamReceiveWindow: 16777216
-  maxStreamReceiveWindow: 16777216
-  initConnReceiveWindow: 33554432
-  maxConnReceiveWindow: 33554432
-
 auth:
   type: password
   password: chika
