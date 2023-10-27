@@ -22,6 +22,7 @@ sed -i "s|\(cert:\).*|\1 $new_cert_path|" "$yaml_file"
 sed -i "s|\(key:\).*|\1 $new_key_path|" "$yaml_file"
 
 echo "重载systemctl: systemctl daemon-reload"
+echo "开机自启并启动: systemctl enable --now hysteria"
 echo "启动_hysteria: systemctl start hysteria"
 echo "重启_hysteria: systemctl restart hysteria"
 echo "状态_hysteria: systemctl status hysteria"
